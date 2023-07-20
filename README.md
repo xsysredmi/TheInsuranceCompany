@@ -27,5 +27,8 @@ A list of Insurances where each insurance has the following properties:
 - InsurancePremium
 - InsuredAmount
 
+## Getting you started
+The build is currently failing. We have already modified an Interface to get you started.
+
 ## Last but not least
 There is a static class DatabaseStub that mimics a database containing all the data that the operation GetDutchTravelInsurances need to return. You don't need to change this class.
