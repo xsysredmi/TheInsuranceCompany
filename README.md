@@ -2,8 +2,8 @@
 Great to see that you are interested in working with us! We would really like to expand this group of developers. At TheInsuranceCompany we are great at selling, you guessed it, insurances! Offering Car, Liabillity and Travel insurances. Our +- 60 WebAPI's make sure that the frontend (and the customer) are presented with exactly the right information. This way we try to minimalize the effort the frontend has to make. 
 
 ## System Requirements
--Visual Studio 2022
--GIT
+- Visual Studio 2022
+- GIT
 
 ## The currect product
 The current product is a WebAPI with two operations. 
