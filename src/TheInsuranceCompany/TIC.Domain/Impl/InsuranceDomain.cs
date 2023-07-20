@@ -18,12 +18,6 @@ namespace TIC.DomainAPI.Impl
             return _insuranceProvider.GetInsurances();
         }
 
-        public IEnumerable<TravelInsurance> GetDutchTravelInsurances()
-        {
-            var insurances = _insuranceProvider.GetInsurances();
-            return insurances.OfType<TravelInsurance>().Where(ti => ti.Coverage != null && ti.Coverage.Any(c => c.Code == "NL"));
-        }
-
         public void AddInsurance(Insurance insurance)
         {
             _insuranceProvider.AddInsurance(insurance);

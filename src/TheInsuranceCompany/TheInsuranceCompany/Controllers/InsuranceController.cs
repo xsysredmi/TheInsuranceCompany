@@ -60,19 +60,5 @@ namespace TIC.WebAPI.Controllers
                 throw;
             }
         }
-
-        [HttpPost(Name = "GetDutchTravelInsurances")]
-        public void GetDutchTravelInsurances()
-        {
-            try
-            { 
-                var insurances = _insuranceDomain.GetDutchTravelInsurances();
-            }
-            catch (Exception exception)
-            {
-                _logger.Log(LogLevel.Error, exception, exception.Message);
-                throw;
-            }
-        }
     }
 }
