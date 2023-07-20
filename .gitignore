@@ -1,0 +1,10 @@
+Src/packages/
+bin
+obj
+*csproj.vspscc
+**/*.nupkg
+Src/.vs/
+/.vs
+*.suo
+*.user
+*.orig
