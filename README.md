@@ -17,22 +17,17 @@ The AddInsurance operation allows the employee to add an insurance to the produc
 ## The architecture
 ![image](https://github.com/GJBos/TheInsuranceCompany/assets/12369592/c7302c61-ee51-4ad3-b271-11222faf059b)
 
-
-## The Challenge
+## The Challenge - New WebAPI Operation GetDutchTravelInsurances
 As a developer for TheInsuranceCompany, we would like you to implemented a new WebAPI operation named GetDutchTravelInsurances that returns all details of every TravelInsurance that covers the Netherlands (NL). When finished add a pullrequest to the project with your changes. The operation contract should look as follows:
 
-### Request:
+Request:
 Emtpy
 
-### Response
+Response:
 A list of Insurances where each insurance has the following properties:
 - Name
 - Description
 - InsurancePremium
 - InsuredAmount
 
-## Getting you started
-The build is currently failing. We have already modified an Interface to get you started.
-
-## Last but not least
-There is a static class DatabaseStub that mimics a database containing all the data that the operation GetDutchTravelInsurances need to return. You don't need to change this class.
+The build is currently failing. We have already modified an Interface to get you started. There is a static class DatabaseStub that mimics a database containing all the data that the operation GetDutchTravelInsurances need to return. You don't need to change this class.
