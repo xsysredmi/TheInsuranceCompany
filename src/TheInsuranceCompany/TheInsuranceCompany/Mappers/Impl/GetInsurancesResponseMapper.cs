@@ -9,10 +9,7 @@ public class GetInsurancesResponseMapper : IGetInsurancesResponseMapper
     {
         return new GetInsurancesResponse
         {
-            Name = insurances.Select(i => i.Name),
-            Description = insurances.Select(i => i.Description),
-            InsurancePremium = insurances.Select(i => i.InsurancePremium.ToString()),
-            InsuredAmount = insurances.Select(i => i.InsuredAmount.ToString())
+            Name = insurances.Select(i => i.Name)
         };
     }
 }
