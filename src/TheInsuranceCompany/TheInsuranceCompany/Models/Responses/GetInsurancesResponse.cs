@@ -2,7 +2,7 @@
 {
     public class GetInsurancesResponse
     {
-        public IEnumerable<string>? Name { get; set; }
+        public IEnumerable<string> Name { get; set; }
 
     }
 }

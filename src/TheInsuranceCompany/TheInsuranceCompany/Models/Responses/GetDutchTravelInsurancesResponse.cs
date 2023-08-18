@@ -4,8 +4,8 @@
     {
         public IEnumerable<string>? Name { get; set; }
         public IEnumerable<string>? Description { get; set; }
-        public IEnumerable<string>? InsurancePremium { get; set; }
-        public IEnumerable<string>? InsuredAmount { get; set; }
+        public IEnumerable<decimal>? InsurancePremium { get; set; }
+        public IEnumerable<decimal>? InsuredAmount { get; set; }
 
     }
 }

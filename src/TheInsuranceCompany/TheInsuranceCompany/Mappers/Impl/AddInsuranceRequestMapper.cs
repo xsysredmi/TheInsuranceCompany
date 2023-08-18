@@ -7,7 +7,17 @@ namespace TIC.WebAPI.Mappers.Impl
     {
         public Insurance Map(AddInsuranceRequest request)
         {
-            return new CarInsurance();
+            CarInsurance carInsurance = new() 
+            {
+                Name = request.Name,
+                Description = request.Description,
+                InsurancePremium = request.InsurancePremium,
+                InsuredAmount = request.InsuredAmount,
+                LicensePlate = request.LicensePlate,
+                WeightInKg = request.WeightInKg,
+                DateOfBirth = request.DateOfBirth,
+            };
+            return carInsurance;
         }
     }
 }
