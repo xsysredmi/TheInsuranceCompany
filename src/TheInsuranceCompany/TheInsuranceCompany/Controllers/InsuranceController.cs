@@ -55,7 +55,7 @@ namespace TIC.WebAPI.Controllers
             try
             {
                 var domainRequest = _getInsurancesRequestMapper.Map(request);
-                var insurances = _insuranceDomain.GetDutchTravelInsurances();
+                var insurances = _insuranceDomain.GetDutchTravelInsurances(domainRequest);
                 var mappedResponse = _getDutchTravelInsurancesResponseMapper.Map(insurances);
                 return mappedResponse;
             }
