@@ -12,8 +12,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var collection = new ServiceCollection();
-
 var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 //var assemblies =  Directory.GetFiles(path, "TIC*.dll").Select(Assembly.LoadFile).ToList();
 builder.Services.Scan(scan => scan.FromAssemblyOf<IInsuranceDomain>().AddClasses().AsImplementedInterfaces().WithTransientLifetime());
