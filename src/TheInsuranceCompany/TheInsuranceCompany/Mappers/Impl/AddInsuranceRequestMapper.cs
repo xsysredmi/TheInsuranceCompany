@@ -55,7 +55,13 @@ namespace TIC.WebAPI.Mappers.Impl
 
         private DomainModel.LiabilityInsurance Map(LiabilityInsurance insurance)
         {
-            return new CarInsurance();
+            return new DomainModel.LiabilityInsurance
+            {
+                Name = insurance.Name,
+                Description = insurance.Description,
+                InsurancePremium = insurance.InsurancePremium,  
+                InsuredAmount = insurance.InsuredAmount
+            };
         }
     }
 }
