@@ -30,4 +30,4 @@ A list of Insurances where each insurance has the following properties:
 - InsurancePremium
 - InsuredAmount
 
-The build is currently failing. We have already modified an Interface to get you started. There is a static class DatabaseStub that mimics a database containing all the data that the operation GetDutchTravelInsurances need to return. You don't need to change this class.
+The build is currently failing. We have already modified an Interface to get you started. Once you fix this error, you have a starting point from where you have to work your way up through multiple layers in the application. There is a static class DatabaseStub that mimics a database containing all the data that the operation GetDutchTravelInsurances need to return. You don't need to change this class.
