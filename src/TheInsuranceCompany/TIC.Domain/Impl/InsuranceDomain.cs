@@ -22,5 +22,20 @@ namespace TIC.DomainAPI.Impl
         {
             _insuranceProvider.AddInsurance(insurance);
         }
+
+        IEnumerable<Insurance> IInsuranceDomain.GetInsurances(GetInsurancesRequest getInsurancesRequest)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IInsuranceDomain.AddInsurance(Insurance insurance)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<TravelInsurance> IInsuranceDomain.GetDutchTravelInsurances()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
