@@ -11,13 +11,13 @@ namespace TIC.WebAPI.Mappers.Impl
 
             var response = new GetDutchTravelInsurancesResponse() { 
                 success = true,
-                insurances = new List<Models.TravelInsurance>()
+                insurances = new List<Models.DutchTravelInsurance>()
             };
 
             foreach ( var item in insurances )
             {
                 response.insurances.Add(
-                        new Models.TravelInsurance() 
+                        new Models.DutchTravelInsurance() 
                         {
                             Name = item.Name, 
                             Description = item.Description, 
