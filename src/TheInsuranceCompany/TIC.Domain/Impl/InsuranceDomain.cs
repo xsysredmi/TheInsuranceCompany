@@ -25,7 +25,7 @@ namespace TIC.DomainAPI.Impl
 
         IEnumerable<Insurance> IInsuranceDomain.GetInsurances(GetInsurancesRequest getInsurancesRequest)
         {
-            throw new NotImplementedException();
+            return _insuranceProvider.GetInsurances().ToList();
         }
 
         void IInsuranceDomain.AddInsurance(Insurance insurance)
@@ -33,9 +33,17 @@ namespace TIC.DomainAPI.Impl
             throw new NotImplementedException();
         }
 
-        IEnumerable<TravelInsurance> IInsuranceDomain.GetDutchTravelInsurances()
+        List<TIC.DomainModel.TravelInsurance> IInsuranceDomain.GetDutchTravelInsurances()
         {
-            throw new NotImplementedException();
+            var result = _insuranceProvider.GetInsurances().Where(x => x is TravelInsurance).ToList();
+
+            var list = new List<TravelInsurance>();
+
+            foreach (var insurance in result) {
+                list.Add((TravelInsurance)insurance);
+            }
+
+            return list;
         }
     }
 }
